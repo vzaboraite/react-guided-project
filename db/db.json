@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "body": "A beautiful sunset",
+      "image": "https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2064&q=80",
+      "user": {
+        "firstName": "Leonardo",
+        "lastName": "Da Vinci"
+      }
+    },
+    {
+      "id": 2,
+      "body": "Awesome beast in the wild!",
+      "image": "https://images.unsplash.com/photo-1551336841-32a98a5917eb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1216&q=80",
+      "user": {
+        "firstName": "David",
+        "lastName": "Attenborough"
+      }
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "Wonderful!",
+      "postId": 1,
+      "author": {
+        "username": "Tim"
+      }
+    },
+    {
+      "id": 2,
+      "body": "What a lovely image!",
+      "postId": 1,
+      "author": {
+        "username": "Gloria"
+      }
+    },
+    {
+      "id": 3,
+      "body": "Magnificent!",
+      "postId": 2,
+      "author": {
+        "username": "Gloria"
+      }
+    },
+    {
+      "id": 4,
+      "body": "How cute... I want to cuddle.",
+      "postId": 2,
+      "author": {
+        "username": "Bjorn"
+      }
+    }
+  ]
+}
