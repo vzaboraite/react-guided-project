@@ -20,7 +20,7 @@ export default function App() {
 
   return (
     <>
-      <CreatePost />
+      <CreatePost posts={posts} setPosts={setPosts} />
       {posts && <PostsList posts={posts} />}
     </>
   );
