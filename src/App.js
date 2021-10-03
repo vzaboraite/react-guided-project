@@ -21,7 +21,7 @@ export default function App() {
   return (
     <>
       <CreatePost posts={posts} setPosts={setPosts} />
-      {posts && <PostsList posts={posts} />}
+      {posts && <PostsList posts={posts} setPosts={setPosts} />}
     </>
   );
 }

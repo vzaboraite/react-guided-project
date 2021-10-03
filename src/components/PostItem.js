@@ -4,7 +4,7 @@ import CreateComment from "./CreateComment";
 import EditComment from "./EditComment";
 
 export default function PostItem(props) {
-  const { post } = props;
+  const { post, posts, setPosts } = props;
 
   const [hideCreateForm, setHideCreateForm] = useState(true);
   const [commentToEdit, setCommentToEdit] = useState(null);
@@ -27,7 +27,9 @@ export default function PostItem(props) {
       <section>
         <h2>Comments</h2>
         <CommentsList comments={comments} />
-        {hideCreateForm && <CreateComment post={post} />}
+        {hideCreateForm && (
+          <CreateComment post={post} posts={posts} setPosts={setPosts} />
+        )}
         {commentToEdit && <EditComment post={post} />}
       </section>
     </li>
