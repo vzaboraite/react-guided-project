@@ -69,15 +69,23 @@ export default function CreatePost({ posts, setPosts }) {
         id="description"
         name="description"
         onChange={handleInputs}
+        required
       />
       <label for="image">Image:</label>
-      <input type="url" id="image" name="image" onChange={handleInputs} />
+      <input
+        type="url"
+        id="image"
+        name="image"
+        onChange={handleInputs}
+        required
+      />
       <label for="firstName">First name:</label>
       <input
         type="text"
         id="firstName"
         name="firstName"
         onChange={handleInputs}
+        required
       />
       <label for="lastName">Last name:</label>
       <input
@@ -85,6 +93,7 @@ export default function CreatePost({ posts, setPosts }) {
         id="lastName"
         name="lastName"
         onChange={handleInputs}
+        required
       />
       <button type="submit">Post</button>
     </form>

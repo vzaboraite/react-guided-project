@@ -91,6 +91,7 @@ export default function EditComment({ post, posts, setPosts, commentToEdit }) {
         name="comment"
         value={commentInputs.body}
         onChange={handleInputs}
+        required
       ></textarea>
       <label for="username">Username:</label>
       <input
@@ -99,6 +100,7 @@ export default function EditComment({ post, posts, setPosts, commentToEdit }) {
         name="username"
         value={commentInputs.author.username}
         onChange={handleInputs}
+        required
       />
       <button type="submit">Update</button>
     </form>

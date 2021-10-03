@@ -67,13 +67,19 @@ export default function CreateComment({ post, posts, setPosts }) {
   return (
     <form onSubmit={handleSubmit}>
       <label for="comment">Comment:</label>
-      <textarea id="comment" name="comment" onChange={handleInputs}></textarea>
+      <textarea
+        id="comment"
+        name="comment"
+        onChange={handleInputs}
+        required
+      ></textarea>
       <label for="username">Username:</label>
       <input
         type="text"
         id="username"
         name="username"
         onChange={handleInputs}
+        required
       />
       <button type="submit">Create</button>
     </form>
