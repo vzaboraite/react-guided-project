@@ -26,11 +26,18 @@ export default function PostItem(props) {
       </div>
       <section>
         <h2>Comments</h2>
-        <CommentsList comments={comments} />
+        <CommentsList comments={comments} setCommentToEdit={setCommentToEdit} />
         {hideCreateForm && (
           <CreateComment post={post} posts={posts} setPosts={setPosts} />
         )}
-        {commentToEdit && <EditComment post={post} />}
+        {commentToEdit && (
+          <EditComment
+            post={post}
+            posts={posts}
+            setPosts={setPosts}
+            commentToEdit={commentToEdit}
+          />
+        )}
       </section>
     </li>
   );

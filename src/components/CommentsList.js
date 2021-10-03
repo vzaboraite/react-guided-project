@@ -1,5 +1,5 @@
 export default function CommentsList(props) {
-  const { comments } = props;
+  const { comments, setCommentToEdit } = props;
 
   return (
     <ul className="comments-list">
@@ -10,7 +10,7 @@ export default function CommentsList(props) {
           <li key={index}>
             <h3>{author.username}</h3>
             <p>{body}</p>
-            <button>Edit</button>
+            <button onClick={() => setCommentToEdit(comment)}>Edit</button>
           </li>
         );
       })}
